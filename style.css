@@ -1,0 +1,769 @@
+*{
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+    font-family: Tahoma, Verdana, sans-serif;
+}
+
+@font-face {
+    font-family: avrileSans;
+    src: url(AvrileSans-Light.ttf);
+}
+
+@font-face{
+    font-family: loveloBlack;
+    src: url(Lovelo\ Black.otf);
+}
+
+body{
+    font-size: 100%;
+    font-family: sans-serif;
+}
+
+section, div, span, ul, li, a{
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+.title{
+    font-family: 'loveloBlack';
+    font-size: 50px;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+#navbar{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px;
+    background-color: #000;
+    position: fixed;
+    z-index: 500;
+}
+
+#navbar a{
+    color: #fff;
+    text-decoration: none;
+}
+
+#nav li{
+    list-style: none;
+    display: inline-block;
+    margin: 10px;
+    font-size: 20px;
+}
+
+#home, #about, #lookbook, #opening, #contact{
+    width: 100%;
+    height: auto;
+}
+
+#home{
+    background-color: #000;
+    background-repeat: no-repeat;
+}
+
+#main-foto{
+    max-width: 100%;
+    max-height: 100vh;
+}
+
+#title1{
+    font-family: loveloBlack;
+    color: #fff;
+    position: absolute;
+    top: 13rem;
+    font-size: 51px;
+}
+
+#title2{
+    font-family: avrileSans;
+    position: absolute;
+    top: 15rem;
+    font-weight: lighter;
+    color: #ffd38b;
+    font-size: 90px;
+}
+
+#description{
+    font-family: 'loveloBlack';
+    font-size: 28px;
+    position: absolute;
+    top: 21.5rem;
+}
+
+#extra{
+    font-family: fancyFont;
+    display: flex;
+    width: 25%;
+    gap: 35px;
+    position: absolute;
+    top: 20rem;
+    overflow: visible;
+}
+
+#home{
+    display: flex;
+    justify-content: center;
+}
+
+#about-foto{
+    max-width: 50%;
+}
+
+#about{
+    padding-top: 6rem;
+    padding-bottom: 2rem;
+}
+
+#inspire{
+    font-family: 'avrileSans';
+    text-align: center;
+    margin-bottom: 2rem;
+    font-size: 40px;
+}
+
+#lookbook{
+    padding-top: 6rem;
+    padding-bottom: 2rem;
+}
+
+#lookbook-group{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    height: auto;
+    align-items: center;
+}
+
+.foto1, .foto2, .foto3, .foto4, .foto5, .foto6, .foto7, .foto8, .foto9{
+    width: 20rem;
+    height: 20rem;
+    margin: 10px;
+    border-color: black;
+    overflow: hidden;
+}
+
+
+.gallerij{
+    width: inherit;
+}
+
+#about-items{
+    height: auto;
+    width: 90%;
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.textbar{
+    background-color: #000;
+    color: #ffd38b;
+    width: 90%;
+    margin-left: -50px;
+    padding: 1.5rem;
+    line-height: 1.5;
+}
+
+#home-content{
+    width: 22%;
+    margin-top: 15rem;
+    margin-right: 1rem;
+    margin-left: 5rem;
+    color: white;
+}
+
+#info{
+    width: 22%;
+    margin-top: 15rem;
+    margin-right: 5rem;
+    color: white;
+}
+
+.agenda{
+    padding-top: 1.5rem;
+    padding-bottom: 0.5rem;
+    border-bottom: solid 1px;
+}
+
+.agenda-info-1{
+    float: left;
+}
+
+.agenda-info-2{
+    float: right;
+}
+
+.idk{
+    margin-top: 1.5rem;
+}
+
+#opening{
+    display: flex;
+    padding-top: 4.5rem;
+    padding-bottom: 2rem;
+}
+
+#opening-content{
+    width: 50%;
+    margin-left: 50px;
+    padding: 1.5rem;
+    background-color: #000;
+    color: #fff;
+}
+
+#opening-foto{
+    max-width: 50%;
+    margin-right: 50px;
+}
+
+#contact{
+    padding-top: 6rem;
+    padding-bottom: 2rem;
+    background-color: #000;
+    color: #fff;
+}
+
+#contactContent{
+    display: flex;
+    justify-content: center;
+    gap: 10rem;
+}
+
+.contactText1{
+    margin-left: 2rem;
+}
+
+.contactText2{
+    margin-right: 2rem;
+}
+
+#text1{
+    position: absolute;
+    top: 14rem;
+}
+
+#text2{
+    position: absolute;
+    top: 17rem;
+}
+
+#text3{
+    position: absolute;
+    top: 20rem;
+}
+
+#hamburger{
+    position: relative;
+    width: 30px;
+    height: 4px;
+    background: #fff;
+    border-radius: 10px;
+    cursor: pointer;
+    z-index: 501;
+    transition: 0.3s;
+}
+
+#hamburger:before,
+#hamburger:after{
+    content: "";
+    position: absolute;
+    height: 4px;
+    right: 0;
+    background: #fff;
+    border-radius: 10px;
+    transition: 0.3s;
+}
+
+#hamburger:before{
+    top: -10px;
+    width: 30px;
+}
+
+#hamburger:after{
+    top: 10px;
+    width: 30px;
+}
+
+.toggle-menu{
+    position: absolute;
+    right: 1rem;
+    width: 30px;
+    height: 100%;
+    z-index: 502;
+    cursor: pointer;
+    opacity: 0;
+}
+
+#hamburger,
+.toggle-menu{
+    display: none;
+}
+
+#navbar input:checked ~ #hamburger{
+    background: transparent;
+}
+
+#navbar input:checked ~ #hamburger:before{
+    top: 0;
+    transform: rotate(-45deg);
+    width: 30px;
+}
+
+#navbar input:checked ~ #hamburger:after{
+    top: 0;
+    transform: rotate(45deg);
+    width: 30px;
+}
+
+#navbar input:checked ~ #nav{
+    right: 0;
+    opacity: 0.85;
+}
+
+@media screen and (max-width: 1132px){
+    #title1{
+        right: 9rem;
+        width: 80%;
+        font-size: 48px;
+    }
+
+    #title2{
+        right: 9rem;
+        width: 80%;
+        font-size: 85px;
+    }
+
+    #description{
+        right: 9rem;
+        width: 80%;
+        font-size: 25px;
+    }
+
+    #text1{
+        right: 6rem;
+        width: 20%;
+    }
+
+    #text2{
+        right: 6rem;
+        width: 20%;
+    }
+
+    #text3{
+        right: 6rem;
+        width: 20%;
+    }
+}
+
+@media screen and (max-width: 945px){
+    #hamburger,
+    .toggle-menu{
+        display: block;
+        overflow: visible;
+    }
+    #nav{
+        justify-content: start;
+        flex-direction: column;
+        align-items: center;
+        position: fixed;
+        top: 0;
+        right: -300px;
+        background: #000;
+        width: 200px;
+        height: 100%;
+        padding-top: 65px;
+    }
+
+    #nav li{
+        width: 100%;
+    }
+
+    #title1{
+        top: 5rem;
+        width: 50%;
+        right: 15rem;
+        font-size: 40px;
+    }
+    
+    #title2{
+        top: 7rem;
+        width: 50%;
+        right: 15rem;
+        font-size: 70px;
+    }
+    
+    #description{
+        top: 12.5rem;
+        width: 50%;
+        right: 15rem;
+        font-size: 21px;
+    }
+    
+    #extra{
+        top: 13rem;
+        width: 50%;
+        right: 15rem;
+    }
+
+    #text1{
+        right: 1rem;
+        top: 5.3rem;
+        width: 40%;
+    }
+
+    #text2{
+        right: 1rem;
+        top: 8.55rem;
+        width: 40%;
+    }
+
+    #text3{
+        right: 1rem;
+        top: 12rem;
+        width: 40%;
+    }
+
+    #about-items{
+        flex-direction: column;
+    }
+
+    #about-foto{
+        width: 100%;
+        max-width: 90%;
+    }
+
+    .textbar{
+        width: 80%;
+        margin: 0;
+        margin-top: -100px;
+    }
+
+    #opening{
+        display:block;
+    }
+
+    #opening-content{
+        width: 80%;
+        margin-right: 50px;
+        margin-left: 50px;
+    }
+
+    #opening-foto{
+        max-width: 80%;
+        margin-right: 50px;
+        margin-left: 50px;
+    }
+}
+
+@media screen and (max-device-width: 848px){
+    #hamburger,
+    .toggle-menu{
+        display: block;
+        overflow: visible;
+    }
+    #nav{
+        justify-content: start;
+        flex-direction: column;
+        align-items: center;
+        position: fixed;
+        top: 0;
+        right: -400px;
+        background: #000;
+        width: 350px;
+        height: 100%;
+        padding-top: 65px;
+    }
+
+    #nav li{
+        width: 100%;
+        margin: 25px;
+    }
+
+    .nav-text{
+        font-size: 40px;
+    }
+
+    #title{
+        font-size: 50px;
+    }
+
+    #title1{
+        font-size: 46px;
+    }
+
+    #title2{
+        top: 15rem;
+        font-size: 80px;
+    }
+
+    #description{
+        top: 21rem;
+    }
+    
+    #text1{
+        top: 13rem;
+        right: 3rem;
+        width: 30%;
+        font-size: 20px;
+    }
+
+    #text2{
+        top: 16.5rem;
+        right: 3rem;
+        width: 30%;
+        font-size: 20px;
+    }
+
+    #text3{
+        top: 20rem;
+        right: 3rem;
+        width: 30%;
+        font-size: 20px;
+    }
+
+    #contactContent {
+        gap: 1rem;
+        font-size: 20px;
+    }
+}
+
+@media screen and (max-width: 730px){
+    #contactContent{
+        gap: 1rem;
+    }
+}
+
+@media screen and (max-width: 532px){
+    #title1{
+        font-size: calc(3vw + 3vh);
+    }
+
+    #title2{
+        font-size: calc(5vw + 5.5vh);
+    }
+
+    #description{
+        font-size: calc(1.5vw + 1.5vh);
+    }
+
+    #extra{
+        font-size: calc(1.2vw + 1.2vh);
+    }
+
+    #title1, #title2, #description, #extra{
+        left: 2rem;
+    }
+
+    #text1{
+        font-size: calc(1vw + 1vh);
+    }
+
+    #text2{
+        font-size: calc(1vw + 1vh);
+    }
+
+    #text3{
+        font-size: calc(1vw + 1vh);
+    }
+}
+
+@media screen and (max-device-width: 580px){
+    #navbar-title{
+        font-size: 50px;
+    }
+
+    #navbar{
+        padding: 30px;
+    }
+
+    #hamburger{
+        width: 50px;
+        height: 7px;
+    }
+
+    #hamburger:before{
+        top: -15px;
+        width: 50px;
+        height: 7px;
+    }
+
+    #hamburger:after{
+        top: 15px;
+        width: 50px;
+        height: 7px;
+    }
+
+    #navbar input:checked ~ #hamburger:before{
+        top: 0;
+        transform: rotate(-45deg);
+        width: 50px;
+    }
+
+    #navbar input:checked ~ #hamburger:after{
+        top: 0;
+        transform: rotate(45deg);
+        width: 50px;
+    }
+
+    #title1{
+        top: 12.6rem;
+        left: 5rem;
+        font-size: 52px;
+    }
+
+    #title2{
+        top: 14.6rem;
+        left: 5rem;
+        font-size: 90px;
+    }
+
+    #description{
+        top: 21rem;
+        left: 5rem;
+        font-size: 27px;
+    }
+
+    #extra{
+        gap: 45px;
+        top: 25rem;
+        left: 5rem;
+        font-size: 25px;
+    }
+
+    #main-foto{
+        height: 80rem;
+    }
+
+    #about-items{
+        flex-direction: column;
+    }
+
+    #about-foto{
+        width: 100%;
+        max-width: 90%;
+    }
+
+    .textbar{
+        width: 80%;
+        margin: 0;
+        margin-top: -100px;
+    }
+}
+
+@media screen and (max-device-width: 425px){
+    .foto1, .foto2, .foto3, .foto4, .foto5, .foto6, .foto7, .foto8, .foto9 {
+        width: 30rem;
+        height: 30rem;
+        margin: 20px;
+    }
+
+    #title1{
+        top: 12rem;
+        font-size: 69px;
+    }
+
+    #title2{
+        top: 14.5rem;
+        font-size: 120px;
+    }
+
+    #description{
+        top: 23rem;
+        font-size: 36px;
+    }
+
+    #text2 {
+        top: 13rem;
+        right: 5rem;
+        font-size: 25px;
+    }
+
+    #text3{
+        top: 17.5rem;
+        right: 5rem;
+        font-size: 25px;
+    }
+
+    #text4{
+        top: 22rem;
+        right: 5rem;
+        font-size: 25px;
+    }
+
+    .agenda{
+        font-size: 30px;
+    }
+
+    .idk{
+        font-size: 25px;
+    }
+
+    #opening-title{
+        font-family: 'loveloBlack';
+        font-size: 50px;
+    }
+
+    #opening{
+        flex-direction: column;
+    }
+
+    #opening-content{
+        width: 90%;
+        margin-right: 50px;
+        margin-left: 50px;
+    }
+
+    #opening-foto{
+        max-width: 90%;
+        margin-right: 50px;
+        margin-left: 50px;
+    }
+
+    #contactContent {
+        gap: 1rem;
+        font-size: 19px;
+    }
+}
+
+@media screen and (max-device-width: 375px){
+    #main-foto{
+        height: 90rem;
+    }
+
+    #title1{
+        top: 12rem;
+        font-size: 69px;
+    }
+
+    #title2{
+        top: 14.5rem;
+        font-size: 120px;
+    }
+
+    #description{
+        top: 23rem;
+        font-size: 36px;
+    }
+
+    #text2 {
+        top: 13rem;
+        font-size: 25px;
+    }
+
+    #text3{
+        top: 17.5rem;
+        font-size: 25px;
+    }
+
+    #text4{
+        top: 22rem;
+        font-size: 25px;
+    }
+}

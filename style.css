@@ -534,6 +534,12 @@ section, div, span, ul, li, a{
     }
 }
 
+@media screen and (max-device-width: 820px){
+    #title1{
+        top: 13rem;
+    }
+}
+
 @media screen and (max-width: 730px){
     #contactContent{
         gap: 1rem;
@@ -679,19 +685,19 @@ section, div, span, ul, li, a{
         font-size: 36px;
     }
 
-    #text2 {
+    #text1 {
         top: 13rem;
         right: 5rem;
         font-size: 25px;
     }
 
-    #text3{
+    #text2{
         top: 17.5rem;
         right: 5rem;
         font-size: 25px;
     }
 
-    #text4{
+    #text3{
         top: 22rem;
         right: 5rem;
         font-size: 25px;
@@ -752,17 +758,17 @@ section, div, span, ul, li, a{
         font-size: 36px;
     }
 
-    #text2 {
+    #text1 {
         top: 13rem;
         font-size: 25px;
     }
 
-    #text3{
+    #text2{
         top: 17.5rem;
         font-size: 25px;
     }
 
-    #text4{
+    #text3{
         top: 22rem;
         font-size: 25px;
     }

@@ -483,11 +483,11 @@ section, div, span, ul, li, a{
 
     #nav li{
         width: 100%;
-        margin: 25px;
+        margin: 10px;
     }
 
     .nav-text{
-        font-size: 40px;
+        font-size: 30px;
     }
 
     #title{

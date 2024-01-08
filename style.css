@@ -462,11 +462,12 @@ section, div, span, ul, li, a{
     }
 }
 
-@media screen and (max-device-width: 848px){
+@media (max-device-width: 848px){
     #hamburger,
     .toggle-menu{
         display: block;
         overflow: visible;
+        z-index: 511;
     }
     #nav{
         justify-content: start;
@@ -479,6 +480,7 @@ section, div, span, ul, li, a{
         width: 350px;
         height: 100%;
         padding-top: 65px;
+        z-index: 510;
     }
 
     #nav li{
@@ -534,7 +536,7 @@ section, div, span, ul, li, a{
     }
 }
 
-@media screen and (max-device-width: 820px){
+@media (max-device-width: 820px){
     #title1{
         top: 13rem;
     }
@@ -580,7 +582,7 @@ section, div, span, ul, li, a{
     }
 }
 
-@media screen and (max-device-width: 580px){
+@media (max-device-width: 580px){
     #navbar-title{
         font-size: 50px;
     }
@@ -663,7 +665,7 @@ section, div, span, ul, li, a{
     }
 }
 
-@media screen and (max-device-width: 425px){
+@media (max-device-width: 425px){
     .foto1, .foto2, .foto3, .foto4, .foto5, .foto6, .foto7, .foto8, .foto9 {
         width: 30rem;
         height: 30rem;
@@ -738,7 +740,7 @@ section, div, span, ul, li, a{
     }
 }
 
-@media screen and (max-device-width: 375px){
+@media (max-device-width: 375px){
     #main-foto{
         height: 90rem;
     }

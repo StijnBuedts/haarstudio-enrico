@@ -532,6 +532,14 @@ section, div, span, ul, li, a{
 
     #contactContent {
         gap: 1rem;
+        font-size: 20px;
+    }
+
+    .contactText1{
+        font-size: 15px;
+    }
+
+    .contactText2{
         font-size: 15px;
     }
 }

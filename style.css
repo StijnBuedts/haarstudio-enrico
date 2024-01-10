@@ -469,6 +469,11 @@ section, div, span, ul, li, a{
         overflow: visible;
         z-index: 511;
     }
+
+    .toggle-menu{
+        width: 10%
+    }
+    
     #nav{
         justify-content: start;
         flex-direction: column;
@@ -497,6 +502,7 @@ section, div, span, ul, li, a{
     }
 
     #title1{
+        top: 13rem;
         font-size: 46px;
     }
 
@@ -511,23 +517,23 @@ section, div, span, ul, li, a{
     
     #text1{
         top: 13rem;
-        right: 3rem;
-        width: 30%;
-        font-size: 20px;
+        right: 1rem;
+        width: 35%;
+        font-size: 16px;
     }
 
     #text2{
         top: 16.5rem;
-        right: 3rem;
-        width: 30%;
-        font-size: 20px;
+        right: 1rem;
+        width: 35%;
+        font-size: 16px;
     }
 
     #text3{
         top: 20rem;
-        right: 3rem;
-        width: 30%;
-        font-size: 20px;
+        right: 1rem;
+        width: 35%;
+        font-size: 16px;
     }
 
     #contactContent {
@@ -541,12 +547,6 @@ section, div, span, ul, li, a{
 
     .contactText2{
         font-size: 15px;
-    }
-}
-
-@media only screen and (max-device-width: 820px){
-    #title1{
-        top: 13rem;
     }
 }
 
